@@ -22,7 +22,9 @@ func damage_loop():
 	if hitstun > 0:
 		hitstun -= 1
 	for body in $hitbox.get_overlapping_bodies():
-		if hitstun == 0 and body.get("DAMAGE") != null and body.get("TYPE") != TYPE:
+		#if hitstun == 0 and body.get("DAMAGE") != null and body.get("TYPE") != TYPE:
+		if hitstun == 0 and body.get("DAMAGE") != null and body.get("TYPE") != TYPE and body.get("TYPE") != "CAMERA": 
+			
 			health -= body.get("DAMAGE")
 			hitstun = 10
 			knockdir = transform.origin - body.transform.origin
