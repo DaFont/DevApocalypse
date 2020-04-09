@@ -1,12 +1,9 @@
-extends KinematicBody2D
-
-const SPEED  = 70
-
-var movedir = Vector2(0,0)
+extends "res://engine/entity.gd"
 
 func _physics_process(delta):
 	controls_loop()
 	movement_loop()
+	damage_loop()
 
 func controls_loop():
 	var LEFT =  Input.is_action_pressed("ui_left")
@@ -17,6 +14,3 @@ func controls_loop():
 	movedir.x = -int(LEFT) + int(RIGHT)
 	movedir.y = -int(UP) + int(DOWN)
 
-func movement_loop():
-	var motion = movedir.normalized() * SPEED
-	move_and_slide(motion, Vector2(0,0))
