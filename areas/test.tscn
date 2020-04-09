@@ -1,18 +1,41 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://tiles/wall.tres" type="TileSet" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemies/red_slime.tscn" type="PackedScene" id=3]
 
 [node name="Node" type="Node"]
-
-[node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 29.5248, 54.7349 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -65540, 0, 0, -7, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 65536, 0, 0, 65544, 0, 0, 131072, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131080, 0, 0, 196608, 0, 0, 196611, 0, 0, 196613, 0, 0, 196616, 0, 0, 262144, 0, 0, 262147, 0, 0, 262149, 0, 0, 262152, 0, 0, 327680, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327688, 0, 0, 393216, 0, 0, 393224, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0 )
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 65536, 0, 0, 65550, 0, 0, 131072, 0, 0, 131086, 0, 0, 196608, 0, 0, 196622, 0, 0, 262144, 0, 0, 262158, 0, 0, 327680, 0, 0, 327694, 0, 0, 393216, 0, 0, 393230, 0, 0, 458752, 0, 0, 458766, 0, 0, 524288, 0, 0, 524302, 0, 0, 589824, 0, 0, 589838, 0, 0, 655360, 0, 0, 655374, 0, 0, 720896, 0, 0, 720910, 0, 0, 786432, 0, 0, 786446, 0, 0, 851968, 0, 0, 851982, 0, 0, 917504, 0, 0, 917505, 0, 0, 917506, 0, 0, 917507, 0, 0, 917508, 0, 0, 917509, 0, 0, 917510, 0, 0, 917511, 0, 0, 917512, 0, 0, 917513, 0, 0, 917514, 0, 0, 917515, 0, 0, 917516, 0, 0, 917517, 0, 0, 917518, 0, 0 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 29.5248, 54.7349 )
+SPEED = 150
+
+[node name="red_slime" parent="." instance=ExtResource( 3 )]
+position = Vector2( 108.837, 33.7631 )
+
+[node name="red_slime2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 62.3625, 42.899 )
+
+[node name="red_slime3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 56.4687, 136.223 )
+
+[node name="red_slime4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 185.317, 98.1154 )
+
+[node name="red_slime5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 179.399, 49.1726 )
+
+[node name="red_slime6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 43.2287, 200.473 )
+
+[node name="red_slime7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 132.388, 171.294 )
