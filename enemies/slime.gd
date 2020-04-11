@@ -5,8 +5,6 @@ const DAMAGE = 1
 var movetimer_lenght = 20
 var movetimer = 0
 
-
-
 func _ready():
 	$anim.play("default")
 	movedir = dir.random_direction()

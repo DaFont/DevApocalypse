@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://enemies/slime.gd" type="Script" id=1]
-[ext_resource path="res://enemies/red_slime.png" type="Texture" id=2]
+[ext_resource path="res://enemies/green_slime.png" type="Texture" id=2]
 
 [sub_resource type="Animation" id=1]
 resource_name = "default"
@@ -25,7 +25,7 @@ extents = Vector2( 12, 13 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 13, 14 )
 
-[node name="red_slime" type="KinematicBody2D"]
+[node name="green_slime" type="KinematicBody2D"]
 script = ExtResource( 1 )
 SPEED = 80
 
